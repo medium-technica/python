@@ -1,0 +1,19 @@
+This directory contains the Python wrappers to PortAudio.
+
+This wrapper written by David McNab <david@freenet.org.nz>
+
+PortAudio written by many good folk, info at
+www.portaudio.com
+
+When you unpack this Python package, you should place this
+directory at the top level of your PortAudio build tree, next
+to all the other directories such as 'pablio', 'pa_common' etc.
+
+Note that this Python wrapper features the ability to read in
+encoded sound files, such as WAV files. For this, libsndfile
+is required. Refer to www.freenet.org.nz/python/pyPortAudio to
+get a pre-built binary copy of libsndfile for windoze if you
+need to.
+
+Build and installation instructions in the file INSTALL
+

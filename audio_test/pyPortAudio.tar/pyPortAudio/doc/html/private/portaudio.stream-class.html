@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>portaudio.stream</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css"></link>
+</head>
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+
+<!-- =========== START OF NAVBAR =========== -->
+<table class="navbar" border="0" width="100%" cellpadding="0" bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="center">
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="trees.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="indices.html">Index</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+<font size="-1"><b class="breadcrumbs">
+  <a href="portaudio-module.html">Module&nbsp;portaudio</a> ::
+  Class&nbsp;stream</b></font></br>
+    </td>
+    <td><table cellpadding="0" cellspacing="0">
+      <tr><td align="right"><font size="-2">[show&nbsp;private&nbsp;|&nbsp;<a href="../public/portaudio.stream-class.html">hide&nbsp;private</a>]</font></td></tr>
+      <tr><td align="right"><font size="-2">[<a href="frames.html"target="_top">frames</a>&nbsp;|&nbsp;<a href="portaudio.stream-class.html" target="_top">no&nbsp;frames</a>]</font></td></tr>
+    </table></td></tr></table>
+
+<!-- =========== START OF CLASS DESCRIPTION =========== -->
+<h2 class="class">Class stream</h2>
+
+<hr/>
+Defines a 'stream' class for audio operations
+
+
+<hr/>
+
+
+<!-- =========== START OF METHOD SUMMARY =========== -->
+<table class="summary" border="1" cellpadding="3" cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="summary">
+  <th colspan="2">Method Summary</th></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class=summary-sig><a href="portaudio.stream-class.html#__init__" class="summary-sig-name"><code>__init__</code></a>(<span class=summary-sig-arg>self</span>,
+               <span class=summary-sig-arg>samplerate</span>,
+               <span class=summary-sig-arg>mode</span>,
+               <span class=summary-sig-arg>channels</span>)</span></code>
+<br />Constructor - create an open audio stream</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><a name="__del__"></a><span class=summary-sig><span class=summary-sig-name>__del__</span>(<span class=summary-sig-arg>self</span>)</span></code>
+</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class=summary-sig><a href="portaudio.stream-class.html#close" class="summary-sig-name"><code>close</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />Closes a previously opened audio stream</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class=summary-sig><a href="portaudio.stream-class.html#playWavFile" class="summary-sig-name"><code>playWavFile</code></a>(<span class=summary-sig-arg>self</span>,
+               <span class=summary-sig-arg>path</span>)</span></code>
+<br />Plays a WAV file.</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class=summary-sig><a href="portaudio.stream-class.html#read" class="summary-sig-name"><code>read</code></a>(<span class=summary-sig-arg>self</span>,
+               <span class=summary-sig-arg>numframes</span>)</span></code>
+<br />read</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class=summary-sig><a href="portaudio.stream-class.html#readableFrames" class="summary-sig-name"><code>readableFrames</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />readableFrames</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class=summary-sig><a href="portaudio.stream-class.html#readRaw" class="summary-sig-name"><code>readRaw</code></a>(<span class=summary-sig-arg>self</span>,
+               <span class=summary-sig-arg>numframes</span>)</span></code>
+<br />readRaw</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class=summary-sig><a href="portaudio.stream-class.html#resample" class="summary-sig-name"><code>resample</code></a>(<span class=summary-sig-arg>self</span>,
+               <span class=summary-sig-arg>old</span>,
+               <span class=summary-sig-arg>oldrate</span>)</span></code>
+<br />Converts an audio sample from one rate, to a rate which matches the 
+currently open stream</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class=summary-sig><a href="portaudio.stream-class.html#write" class="summary-sig-name"><code>write</code></a>(<span class=summary-sig-arg>self</span>,
+               <span class=summary-sig-arg>frames</span>)</span></code>
+<br />write</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class=summary-sig><a href="portaudio.stream-class.html#writeableFrames" class="summary-sig-name"><code>writeableFrames</code></a>(<span class=summary-sig-arg>self</span>)</span></code>
+<br />writeableFrames</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class=summary-sig><a href="portaudio.stream-class.html#writeRaw" class="summary-sig-name"><code>writeRaw</code></a>(<span class=summary-sig-arg>self</span>,
+               <span class=summary-sig-arg>buf</span>)</span></code>
+<br />Write raw data to audio stream</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class=summary-sig><a href="portaudio.stream-class.html#_convertSampleRate" class="summary-sig-name"><code>_convertSampleRate</code></a>(<span class=summary-sig-arg>self</span>,
+               <span class=summary-sig-arg>old</span>,
+               <span class=summary-sig-arg>oldrate</span>)</span></code>
+<br />Converts an audio sample from one rate, to a rate which matches the 
+currently open stream</td></tr>
+</table><br />
+
+
+<!-- =========== START OF METHOD DETAILS =========== -->
+<table class="details" border="1" cellpadding="3" cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="details">
+  <th colspan="2">Method Details</th></tr>
+</table>
+
+<a name="__init__"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class=sig><span class=sig-name>__init__</span>(<span class=sig-arg>self</span>,
+               <span class=sig-arg>samplerate</span>=<span class=sig-default>44100</span>,
+               <span class=sig-arg>mode</span>=<span class=sig-default>'rw'</span>,
+               <span class=sig-arg>channels</span>=<span class=sig-default>2</span>)</span>
+    <br /><i>(Constructor)</i>
+  </h3>
+  <p>Constructor - create an open audio stream</p>
+  Arguments:
+  <ul>
+    <li>
+      samplerate (default 44100)
+    </li>
+    <li>
+      mode - &quot;r&quot; for read, &quot;w&quot; for write, &quot;rw&quot; 
+      for read/write
+    </li>
+    <li>
+      channels - either 1 or 2 (default 2)
+    </li>
+  </ul>
+  Returns
+  <ul>
+    <li>
+      stream handle
+    </li>
+  </ul>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="close"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class=sig><span class=sig-name>close</span>(<span class=sig-arg>self</span>)</span>
+  </h3>
+  Closes a previously opened audio stream
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="playWavFile"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class=sig><span class=sig-name>playWavFile</span>(<span class=sig-arg>self</span>,
+               <span class=sig-arg>path</span>)</span>
+  </h3>
+  <p>Plays a WAV file.</p>
+  <p>Internally, this method reads the WAV data from disk, converts to a 
+  raw bit stream, and re-samples it to match the sample rate of the 
+  currently open stream. Once the data is ready, it gets cached in a 
+  dict, so that the same file won't need to be read more than once.</p>
+  Arguments:
+  <ul>
+    <li>
+      path - pathname of wav file to play
+    </li>
+  </ul>
+  Returns:
+  <ul>
+    <li>
+      None
+    </li>
+  </ul>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="read"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class=sig><span class=sig-name>read</span>(<span class=sig-arg>self</span>,
+               <span class=sig-arg>numframes</span>)</span>
+  </h3>
+  <p>read</p>
+  <p>Read audio frames, and return them as a list of frame tuples that can 
+  be processed.</p>
+  Arguments:
+  <ul>
+    <li>
+      nframes - number of frames to read and return
+    </li>
+  </ul>
+  Returns:
+  <ul>
+    <li>
+      sequence of frames. Each 'frame' is a tuple, consisting of 1 element 
+      if mono, 2 if stereo
+    </li>
+  </ul>
+  Notes:
+  <ul>
+    <li>
+      If there aren't enough audio frames available to satisfy this request, 
+      this function will block until enough frames come available.
+    </li>
+    <li>
+      This is one painfully slow function. There's a huge overhead in 
+      converting raw C buffers into python sequences. If you need speed, 
+      and don't need to be able to process the received data, use 
+      readRaw() instead
+    </li>
+  </ul>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="readableFrames"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class=sig><span class=sig-name>readableFrames</span>(<span class=sig-arg>self</span>)</span>
+  </h3>
+  <p>readableFrames</p>
+  <p>Returns the number of frames that could be read from the stream 
+  without this call blocking</p>
+  Arguments:
+  <ul>
+    <li>
+      None
+    </li>
+  </ul>
+  Returns:
+  <ul>
+    <li>
+      number of readable frames
+    </li>
+  </ul>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="readRaw"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class=sig><span class=sig-name>readRaw</span>(<span class=sig-arg>self</span>,
+               <span class=sig-arg>numframes</span>)</span>
+  </h3>
+  <p>readRaw</p>
+  <p>Reads a number of audio frames and returns these as a raw string. Best 
+  when you don't need to process the data. Runs much faster than the 
+  read() method.</p>
+  Arguments:
+  <ul>
+    <li>
+      nframes - number of frames to read and return
+    </li>
+  </ul>
+  Returns:
+  <ul>
+    <li>
+      raw frame data, returned as a string. Not very useful if you want to 
+      do any processing, but MUCH faster than Read()!
+    </li>
+  </ul>
+  Note:
+  <ul>
+    <li>
+      If there aren't enough audio frames available to satisfy this request, 
+      this method will block until enough frames come available
+    </li>
+  </ul>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="resample"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class=sig><span class=sig-name>resample</span>(<span class=sig-arg>self</span>,
+               <span class=sig-arg>old</span>,
+               <span class=sig-arg>oldrate</span>)</span>
+  </h3>
+  <p>Converts an audio sample from one rate, to a rate which matches the 
+  currently open stream</p>
+  Arguments:
+  <ul>
+    <li>
+      frames - sequence of frame tuples
+    </li>
+    <li>
+      oldrate - former sample rate of data
+    </li>
+  </ul>
+  Returns:
+  <ul>
+    <li>
+      frames - a new sequence of frame tuples, converted to rate matching 
+      this stream
+    </li>
+  </ul>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="write"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class=sig><span class=sig-name>write</span>(<span class=sig-arg>self</span>,
+               <span class=sig-arg>frames</span>)</span>
+  </h3>
+  <p>write</p>
+  <p>write out a list of frames to audio stream</p>
+  Arguments:
+  <ul>
+    <li>
+      frames - sequence of frames - each frame is a 1 or 2-element tuple, 
+      according to whether the stream is mono or stereo. See <a 
+      href="portaudio.stream-class.html#read" 
+      class="link"><code>read</code></a>
+    </li>
+  </ul>
+  Returns
+  <ul>
+    <li>
+      None
+    </li>
+  </ul>
+  Notes:
+  <ul>
+    <li>
+      This routine will block untill all the data has been written
+    </li>
+  </ul>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="writeableFrames"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class=sig><span class=sig-name>writeableFrames</span>(<span class=sig-arg>self</span>)</span>
+  </h3>
+  <p>writeableFrames</p>
+  <p>Returns the number of frames that could be written to the stream 
+  without having to wait.</p>
+  Arguments:
+  <ul>
+    <li>
+      None
+    </li>
+  </ul>
+  Returns:
+  <ul>
+    <li>
+      number of writeable frames
+    </li>
+  </ul>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="writeRaw"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class=sig><span class=sig-name>writeRaw</span>(<span class=sig-arg>self</span>,
+               <span class=sig-arg>buf</span>)</span>
+  </h3>
+  <p>Write raw data to audio stream</p>
+  Arguments:
+  <ul>
+    <li>
+      buf - string of raw data to write, as returned by <a 
+      href="portaudio.stream-class.html#readRaw" 
+      class="link"><code>readRaw</code></a>
+    </li>
+  </ul>
+  Returns:
+  <ul>
+    <li>
+      None
+    </li>
+  </ul>
+  Notes:
+  <ul>
+    <li>
+      This routine will block untill all the data has been written
+    </li>
+    <li>
+      Faster than <a href="portaudio.stream-class.html#write" 
+      class="link"><code>write</code></a>, at a price of not being able 
+      to process the data
+    </li>
+  </ul>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="_convertSampleRate"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class=sig><span class=sig-name>_convertSampleRate</span>(<span class=sig-arg>self</span>,
+               <span class=sig-arg>old</span>,
+               <span class=sig-arg>oldrate</span>)</span>
+  </h3>
+  <p>Converts an audio sample from one rate, to a rate which matches the 
+  currently open stream</p>
+  Arguments:
+  <ul>
+    <li>
+      frames - sequence of frame tuples
+    </li>
+    <li>
+      oldrate - former sample rate of data
+    </li>
+  </ul>
+  Returns:
+  <ul>
+    <li>
+      frames - a new sequence of frame tuples, converted to rate matching 
+      this stream
+    </li>
+  </ul>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+<br />
+
+
+<!-- =========== START OF NAVBAR =========== -->
+<table class="navbar" border="0" width="100%" cellpadding="0" bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="center">
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="trees.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="indices.html">Index</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+  </tr>
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tr>
+    <td align="left"><font size="-2">Generated by Epydoc 1.1 on Fri Mar  7 01:49:11 2003</font></td>
+    <td align="right"><a href="http://epydoc.sourceforge.net"
+                      ><font size="-2">http://epydoc.sf.net</font></a></td>
+  </tr>
+</table>
+</body>
+</html>

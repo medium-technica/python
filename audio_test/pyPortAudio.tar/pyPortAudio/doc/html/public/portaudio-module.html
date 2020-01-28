@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>portaudio</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css"></link>
+</head>
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+
+<!-- =========== START OF NAVBAR =========== -->
+<table class="navbar" border="0" width="100%" cellpadding="0" bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="center">
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="trees.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="indices.html">Index</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+<font size="-1"><b class="breadcrumbs">
+  Module&nbsp;portaudio</b></font></br>
+    </td>
+    <td><table cellpadding="0" cellspacing="0">
+      <tr><td align="right"><font size="-2">[<a href="../private/portaudio-module.html">show&nbsp;private</a>&nbsp;|&nbsp;hide&nbsp;private]</font></td></tr>
+      <tr><td align="right"><font size="-2">[<a href="frames.html"target="_top">frames</a>&nbsp;|&nbsp;<a href="portaudio-module.html" target="_top">no&nbsp;frames</a>]</font></td></tr>
+    </table></td></tr></table>
+
+<!-- =========== START OF MODULE DESCRIPTION =========== -->
+<h2 class="module">Module portaudio</h2>
+
+<p>portaudio.py</p>
+Higher-level wrapper for portaudio_. Brings a somewhat more 
+object-oriented packaging, in the form of a class called 'stream'
+<hr/>
+
+<!-- =========== START OF CLASSES =========== -->
+<table class="summary" border="1" cellpadding="3" cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="summary">
+  <th colspan="2">Classes</th></tr>
+<tr><td width="15%">
+  <b><a href="portaudio.stream-class.html"><code>stream</code></a></b></td>
+  <td>Defines a 'stream' class for audio operations</td></tr>
+</table><br />
+
+
+<!-- =========== START OF FUNCTION SUMMARY =========== -->
+<table class="summary" border="1" cellpadding="3" cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="summary">
+  <th colspan="2">Function Summary</th></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class=summary-sig><a href="portaudio-module.html#getClosestRate" class="summary-sig-name"><code>getClosestRate</code></a>(<span class=summary-sig-arg>rate</span>)</span></code>
+<br />getClosestRate</td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1">&nbsp;</font></td>
+  <td><code><span class=summary-sig><a href="portaudio-module.html#readWavFile" class="summary-sig-name"><code>readWavFile</code></a>(<span class=summary-sig-arg>path</span>,
+               <span class=summary-sig-arg>channels</span>)</span></code>
+<br />readWavFile</td></tr>
+</table><br />
+
+
+<!-- =========== START OF VARIABLE SUMMARY =========== -->
+<table class="summary" border="1" cellpadding="3" cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="summary">
+  <th colspan="2">Variable Summary</th></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1"><code>int</code></font></td>
+  <td><code><b><a href="#MONO">MONO</a></b></code>
+  </td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1"><code>int</code></font></td>
+  <td><code><b><a href="#READ">READ</a></b></code>
+  </td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1"><code>int</code></font></td>
+  <td><code><b><a href="#READWRITE">READWRITE</a></b></code>
+  </td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1"><code>int</code></font></td>
+  <td><code><b><a href="#STEREO">STEREO</a></b></code>
+  </td></tr>
+<tr><td align="right" valign="top" width="15%"><font size="-1"><code>int</code></font></td>
+  <td><code><b><a href="#WRITE">WRITE</a></b></code>
+  </td></tr>
+</table><br />
+
+
+<!-- =========== START OF FUNCTION DETAILS =========== -->
+<table class="details" border="1" cellpadding="3" cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="details">
+  <th colspan="2">Function Details</th></tr>
+</table>
+
+<a name="getClosestRate"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class=sig><span class=sig-name>getClosestRate</span>(<span class=sig-arg>rate</span>)</span>
+  </h3>
+  <p>getClosestRate</p>
+  <p>Returns the closest available sample rate to the one given</p>
+  Arguments:
+  <ul>
+    <li>
+      wantedRate - desired sample rate
+    </li>
+  </ul>
+  Returns:
+  <ul>
+    <li>
+      actualRate - closest available sample rate to the one wanted
+    </li>
+  </ul>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+
+<a name="readWavFile"></a>
+<table width="100%" class="func-details" bgcolor="#e0e0e0"><tr><td>
+  <h3><span class=sig><span class=sig-name>readWavFile</span>(<span class=sig-arg>path</span>,
+               <span class=sig-arg>channels</span>=<span class=sig-default>1</span>)</span>
+  </h3>
+  <p>readWavFile</p>
+  <p>Read a WAV file into a raw buffer string, suitable for playing out to 
+  a stream with the <code>writeRaw</code> method.</p>
+  Arguments:
+  <ul>
+    <li>
+      file - path of WAV file to read
+    </li>
+  </ul>
+  Returns:
+  <ul>
+    <li>
+      tuple (sequence_of_frames, samplerate, channels)
+    </li>
+  </ul>
+  Note:
+  <ul>
+    <li>
+      to play this WAV data, use <code>writeRaw</code>, not 
+      <code>write</code>
+    </li>
+  </ul>
+  <dl><dt></dt><dd>
+  </dd></dl>
+</td></tr></table>
+<br />
+
+
+<!-- =========== START OF VARIABLE DETAILS =========== -->
+<table class="details" border="1" cellpadding="3" cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="details">
+  <th colspan="2">Variable Details</th></tr>
+</table><table width="100%" class="var-details" bgcolor="#e0e0e0"><tr><td>
+<a name="MONO"></a>
+<h3>MONO</h3>
+<dl>
+  <dt></dt>
+  <dd>
+    <dl>
+      <dt><b>Type:</b></dt>
+      <dd>
+          <code>int</code>
+
+      </dd>
+      <dt><b>Value:</b></dt>
+      <dd><table><tr><td>
+<pre class="variable">
+4                                                                      </pre>
+        </td></tr></table></dd>
+    </dl>
+  </dd>
+</dl></td></tr></table>
+<table width="100%" class="var-details" bgcolor="#e0e0e0"><tr><td>
+<a name="READ"></a>
+<h3>READ</h3>
+<dl>
+  <dt></dt>
+  <dd>
+    <dl>
+      <dt><b>Type:</b></dt>
+      <dd>
+          <code>int</code>
+
+      </dd>
+      <dt><b>Value:</b></dt>
+      <dd><table><tr><td>
+<pre class="variable">
+1                                                                      </pre>
+        </td></tr></table></dd>
+    </dl>
+  </dd>
+</dl></td></tr></table>
+<table width="100%" class="var-details" bgcolor="#e0e0e0"><tr><td>
+<a name="READWRITE"></a>
+<h3>READWRITE</h3>
+<dl>
+  <dt></dt>
+  <dd>
+    <dl>
+      <dt><b>Type:</b></dt>
+      <dd>
+          <code>int</code>
+
+      </dd>
+      <dt><b>Value:</b></dt>
+      <dd><table><tr><td>
+<pre class="variable">
+3                                                                      </pre>
+        </td></tr></table></dd>
+    </dl>
+  </dd>
+</dl></td></tr></table>
+<table width="100%" class="var-details" bgcolor="#e0e0e0"><tr><td>
+<a name="STEREO"></a>
+<h3>STEREO</h3>
+<dl>
+  <dt></dt>
+  <dd>
+    <dl>
+      <dt><b>Type:</b></dt>
+      <dd>
+          <code>int</code>
+
+      </dd>
+      <dt><b>Value:</b></dt>
+      <dd><table><tr><td>
+<pre class="variable">
+8                                                                      </pre>
+        </td></tr></table></dd>
+    </dl>
+  </dd>
+</dl></td></tr></table>
+<table width="100%" class="var-details" bgcolor="#e0e0e0"><tr><td>
+<a name="WRITE"></a>
+<h3>WRITE</h3>
+<dl>
+  <dt></dt>
+  <dd>
+    <dl>
+      <dt><b>Type:</b></dt>
+      <dd>
+          <code>int</code>
+
+      </dd>
+      <dt><b>Value:</b></dt>
+      <dd><table><tr><td>
+<pre class="variable">
+2                                                                      </pre>
+        </td></tr></table></dd>
+    </dl>
+  </dd>
+</dl></td></tr></table>
+<br />
+<!-- =========== START OF NAVBAR =========== -->
+<table class="navbar" border="0" width="100%" cellpadding="0" bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="center">
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="trees.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="indices.html">Index</a>&nbsp;&nbsp;&nbsp;</th>
+    <th class="navbar">&nbsp;&nbsp;&nbsp;<a class="navbar" href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+  </tr>
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tr>
+    <td align="left"><font size="-2">Generated by Epydoc 1.1 on Fri Mar  7 01:49:10 2003</font></td>
+    <td align="right"><a href="http://epydoc.sourceforge.net"
+                      ><font size="-2">http://epydoc.sf.net</font></a></td>
+  </tr>
+</table>
+</body>
+</html>
