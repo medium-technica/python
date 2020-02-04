@@ -2,7 +2,6 @@ from graphics import *
 import numpy as np
 import time
 
-
 widthWin = 1024	
 heightWin = 768
 win = GraphWin("Clock", widthWin, heightWin)
