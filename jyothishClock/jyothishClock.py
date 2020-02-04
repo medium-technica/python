@@ -3,17 +3,17 @@ import numpy as np
 import time
 
 
-widthWin = 500
-heightWin = 500
+widthWin = 1024	
+heightWin = 768
 win = GraphWin("Clock", widthWin, heightWin)
 win.setBackground("black")
-frames = 1000
+frames = 4000
 tStep = 5/frames
 
 periodMoon = 29.53
 periodVenus = 0.2
 
-radiusOrbitSun = 200
+radiusOrbitSun = heightWin/2*0.75
 radiusSun = 10
 xCentreOrbitSun = widthWin/2
 yCentreOrbitSun = heightWin/2
@@ -29,7 +29,7 @@ sun.draw(win)
 orbitSun.setOutline("white")
 orbitSun.draw(win)
 
-radiusOrbitMoon = 200
+radiusOrbitMoon = radiusOrbitSun
 radiusMoon = 10
 xCentreOrbitMoon = widthWin/2
 yCentreOrbitMoon = heightWin/2
