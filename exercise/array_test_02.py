@@ -1,4 +1,7 @@
-a = [[0] * 3 for i in range(4)] 
+a = [] 
 
-a[2][1] = 20
-print a
+for i in range(4):
+ a.append(0)
+
+a[1] = 20
+print(a)

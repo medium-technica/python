@@ -16,6 +16,6 @@ def on_connect(msg):
 for k in range(rows*cols):
 	on_connect(k)
 
-print arr		
+print (arr)		
 
 
