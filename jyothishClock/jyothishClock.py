@@ -4,8 +4,8 @@ from graphics import *
 import numpy as np
 import time
 
-widthWin = 1024	
-heightWin = 768
+widthWin = 640	
+heightWin = 480
 win = GraphWin("Clock", widthWin, heightWin)
 win.setBackground("black")
 frames = 2000
