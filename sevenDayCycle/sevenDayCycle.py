@@ -4,9 +4,8 @@ from graphics import *
 import keyboard as key
 import numpy as np
 import time
-
-widthWin = 1024	
-heightWin = 768
+widthWin = 640	
+heightWin = 480
 win = GraphWin("Clock", widthWin, heightWin)
 win.setBackground("black")
 frames = 2000
@@ -96,14 +95,14 @@ k=1
 while(True):
  iS = i % 7
  n = i/frames
- #thetaS[iS] = (-2*np.pi*(i * (iS+1))/frames)
- thetaS[iS] = -2*np.pi*n
+ thetaS[iS] = (-2*np.pi*(i * (iS+1))/frames)
+ #thetaS[iS] = -2*np.pi*n
  #thetaS[iS] = (-2*np.pi*i/frames)
  x1S[iS] = xCentreOrbitS[iS] + radiusOrbitS[iS]*np.cos(thetaS[iS])
  y1S[iS] = yCentreOrbitS[iS] + radiusOrbitS[iS]*np.sin(thetaS[iS])
  s[iS].move(x1S[iS]-x0S[iS], y1S[iS]-y0S[iS])
  
- time.sleep(tStep)
+ time.sleep(0.015)
 
  x0S[iS] = x1S[iS]
  y0S[iS] = y1S[iS]
